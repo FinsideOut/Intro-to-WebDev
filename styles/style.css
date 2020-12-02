@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+.logo {
+  font-size: 3rem;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-nav ul li {
+  margin-left: 2rem;
+}
+.main-nav ul li a {
+  font-size: 2rem;
+}
+.main-nav ul li a:hover {
+  border-bottom: 0.1rem solid #01acb4;
+}
+.header-container {
+  top: 0;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#home {
+  position: relative;
+  height: 100vh;
+  background: url("../img/home-whale.jpg") no-repeat center center/cover;
+}
+#home::after {
+  content: "";
+  background-image: linear-gradient(#1a2644, #000);
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.hero-container {
+  margin-top: 40vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.hero-content {
+  max-width: 500px;
+}
+.dive-container {
+  display: flex;
+
+  justify-content: center;
+}
+
+#about {
+  position: relative;
+  min-height: 100vh;
+  background: url("../img/about-waves.jpg") no-repeat center center/cover;
+}
+#about::after {
+  content: "";
+  background-image: linear-gradient(#1a2644, #000);
+  opacity: 0.95;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.twin-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 40vh;
+  text-align: left;
+}
+.twin-right {
+  max-width: 50%;
+  height: 100%;
+}
+.twin-left {
+  max-width: 50%;
+}
+.twin-container img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+.reverse {
+  flex-direction: row-reverse;
+  text-align: right;
+}
