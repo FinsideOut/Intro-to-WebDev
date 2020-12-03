@@ -5,11 +5,14 @@ body {
   font-size: 16px;
   color: white;
 }
-
-.logo {
-  font-size: 3rem;
+/* LANDING  ////////////////////////////////////////////// */
+/* header */
+.header-container {
+  min-height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .main-nav ul {
   display: flex;
   justify-content: space-between;
@@ -24,13 +27,7 @@ body {
 .main-nav ul li a:hover {
   border-bottom: 0.1rem solid #01acb4;
 }
-.header-container {
-  top: 0;
-  height: 15vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+/* background */
 #home {
   position: relative;
   height: 100vh;
@@ -46,9 +43,9 @@ body {
   height: 100%;
   width: 100%;
 }
+/* hero */
 .hero-container {
   margin-top: 40vh;
-
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -58,7 +55,6 @@ body {
 }
 .dive-container {
   display: flex;
-
   justify-content: center;
 }
 
@@ -76,19 +72,6 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-}
-.about-container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 3rem 0;
-}
-
-.card-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 2rem 0;
 }
 
 .twin-container {
@@ -113,4 +96,79 @@ body {
 .reverse {
   flex-direction: row-reverse;
   text-align: right;
+}
+
+#contact {
+  position: relative;
+
+  background: url("https://source.unsplash.com/1600x900/?shore") no-repeat
+    center center/cover;
+}
+#contact::after {
+  content: "";
+  background-image: linear-gradient(#1a2644, #000);
+  opacity: 0.95;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.contact-form {
+  width: 80%;
+  margin: auto;
+}
+.contact-form,
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form-group {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.form-group input,
+.form-group textarea {
+  border: none;
+  background: #333;
+  color: white;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  width: 80%;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+}
+.form-group textarea {
+  text-align: left;
+}
+.form-group label {
+  font-size: 2rem;
+  color: #333;
+}
+footer {
+  background-color: #111;
+  color: #01acb4;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer-icons {
+  width: 30%;
+  margin: auto;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.icon-link:hover {
+  color: white;
 }

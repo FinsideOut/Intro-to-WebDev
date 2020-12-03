@@ -1,9 +1,27 @@
+/*  DEFAULTS ////////////////////////////////////////////////////////// */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   /* border: 1px solid white; */
 }
+
+a {
+  text-decoration: none;
+  color: #01acb4;
+  transition: color 200ms ease-in-out;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+/* CONTAINERS /////////////////////////////////////////////////*/
 .container {
   width: 80%;
   margin: auto;
@@ -11,28 +29,27 @@
 .container > * {
   z-index: 10;
 }
-.flex-row {
+.section-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 3rem 0;
+}
+.card-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 2rem 0;
 }
-.bg-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #01acb4;
-}
-a {
-  text-decoration: none;
-  color: #01acb4;
+.column {
+  flex-direction: column;
 }
 
-ul {
-  list-style: none;
+/* TEXT //////////////////////////////////////////////////////// */
+.logo {
+  font-size: 3rem;
 }
-
-/* text-stuff */
-.text-primary {
+.primary-color {
   color: #01acb4;
 }
 
@@ -42,8 +59,9 @@ ul {
   line-height: 3rem;
   margin-bottom: 1rem;
   border-bottom: 0.1rem solid #01acb4;
-  min-width: fit-content;
 }
+
+/* ALIGNEMENT /////////////////////////////////////////// */
 
 .content-left {
   text-align: left;
@@ -54,6 +72,7 @@ ul {
   padding-left: 3rem;
 }
 
+/* BUTTONS ///////////////////////////////////////////// */
 .btn {
   background-color: #01acb4;
   color: white;
@@ -63,30 +82,38 @@ ul {
   padding: 1rem 2rem;
   text-align: center;
   display: inline-block;
+  transition: 200ms ease-in-out;
+  transition-property: color, background-color;
+}
+.btn:hover {
+  color: #01acb4;
+  background-color: #333;
+}
+.btn-dark {
+  color: #01acb4;
+  background-color: #333;
+}
+.btn-dark:hover {
+  background-color: #222;
 }
 .btn-small {
   font-size: 1rem;
   margin: 1rem 0;
   padding: 0.5rem 1rem;
 }
-
-.btn:hover {
-  color: #01acb4;
-  background-color: #333;
-}
 .btn-small:hover {
   color: #01acb4;
   background-color: white;
 }
 
-/* cards */
+/* CARDS /////////////////////////////////////////////////// */
 .card {
   padding: 1.5rem 1rem;
   margin: 1rem;
   border-radius: 10px;
   background-color: #333;
+  width: fit-content;
 }
-
 .icon-card i,
 .icon-card h3,
 .icon-card p {
@@ -96,6 +123,11 @@ ul {
   margin-top: 1rem;
   font-size: 3rem;
 }
-.column {
-  flex-direction: column;
+
+/* BACKGROUNDS///////////////////////////////////////////// */
+
+.bg-primary {
+  background-color: #01acb4;
+  margin: auto;
+  margin-top: 3rem;
 }

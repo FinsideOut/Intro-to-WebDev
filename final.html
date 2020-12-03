@@ -11,17 +11,17 @@
     </head>
 
     <body>
-        <header id='home'>
-            <div class="header-container container">
-                <h1 class="logo"><span class='text-primary'><i class="fas fa-fish"></i> Hello</span>Whorld</h1>
-                <nav class="main-nav">
+        <section id='home'>
+            <header class="header-container container">
+                <h1 class="logo"><span class='primary-color'><i class="fas fa-fish"></i> Hello</span>Whorld</h1>
+                <nav class='main-nav'>
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
-            </div>
+            </header>
             <div class="hero-container container">
                 <div class="hero-content content-left">
                     <h2 class="headline">Whales are pretty rad eh?</h2>
@@ -37,102 +37,136 @@
                 </div>
             </div>
             <div class="dive-container container">
-                <p>
-                    <a href="#about" class="btn"><i class="fas fa-chevron-down"></i> Dive Deeper</a>
-                </p>
+                <a href="#about" class="btn"><i class="fas fa-chevron-down"></i> Dive Deeper</a>
             </div>
-        </header>
+        </section>
 
         <section id="about">
-            <div class="about-container container">
+            <div class="section-container container">
                 <h2 class="headline">Find out more about Whales</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at ipsum dolor blanditiis
                     praesentium, animi pariatur molestiae dicta neque ex natus nam quod voluptate tempora?
                 </p>
-
                 <div class="card-container">
                     <div class="icon-card card">
-                        <span class='text-primary'>
-                            <i class="fas fa-utensils fa-2x"></i></span>
-                        <h3>Whales are <span class='text-primary'>Tasty</h3>
+                        <span class='primary-color'>
+                            <i class="fas fa-utensils fa-2x"></i>
                         </span>
+                        <h3>Whales are <span class='primary-color'>Tasty</h3></span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, consequatur!</p>
+                    </div>
 
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, consequatur!</p>
-                    </div>
                     <div class="icon-card card">
-                        <span class='text-primary'>
+                        <span class='primary-color'>
                             <i class="fas fa-fish fa-2x"></i></span>
-                        <h3>Whales are <span class='text-primary'>Fish</h3>
+                        <h3>Whales are <span class='primary-color'>Fish</h3>
                         </span>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, consequatur!</p>
                     </div>
                     <div class="icon-card card">
-                        <span class='text-primary'>
+                        <span class='primary-color'>
                             <i class="fas fa-fire-extinguisher fa-2x"></i></span>
-                        <h3>Whales hate <span class='text-primary'>Fire</h3>
+                        <h3>Whales hate <span class='primary-color'>Fire</h3>
                         </span>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, consequatur!</p>
                     </div>
                 </div>
+
+
                 <h2 class="headline">Why Whales are so cool</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at ipsum dolor blanditiis
                     praesentium, animi pariatur molestiae dicta neque ex natus nam quod voluptate tempora?
                 </p>
                 <div class="card-container column">
-                    <div class="card">
-                        <div class="twin-container">
-                            <div class="twin-left">
-                                <h2 class="headline">They swim, like, really far</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at ipsum dolor
-                                    blanditiis
-                                    praesentium, animi pariatur molestiae dicta neque ex natus nam quod voluptate
-                                    tempora?</p>
-
-                                <a href="#about" class="btn btn-small"><i class="fas fa-chevron-down"></i> Learn
-                                    More</a>
-
-                            </div>
-                            <div class="twin-right">
-                                <img src="https://source.unsplash.com/1600x900/?sea" alt="">
-                            </div>
+                    <div class="card twin-container">
+                        <div class="twin-left">
+                            <h2 class="headline">They swim, like, really far</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at ipsum dolor
+                                blanditiis
+                                praesentium, animi pariatur molestiae dicta neque ex natus nam quod voluptate
+                                tempora?</p>
+                            <a href="#about" class="btn btn-small"><i class="fas fa-chevron-down"></i> Learn
+                                More</a>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="twin-container reverse">
-                            <div class="twin-left">
-                                <h2 class="headline">They eat boats</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at ipsum dolor
-                                    blanditiis
-                                    praesentium, animi pariatur molestiae dicta neque ex natus nam quod voluptate
-                                    tempora?
-                                </p>
-                                <a href="#about" class="btn btn-small"><i class="fas fa-chevron-down"></i> Learn
-                                    More</a>
-                            </div>
-                            <div class="twin-right">
-                                <img src="https://source.unsplash.com/1600x900/?boats" alt="">
-                            </div>
+                        <div class="twin-right">
+                            <img src="https://source.unsplash.com/1600x900/?sea" alt="">
                         </div>
+
                     </div>
-                    <div class="card">
-                        <div class="twin-container">
-                            <div class="twin-left">
-                                <h2 class="headline">They love posing for photos</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at ipsum dolor
-                                    blanditiis
-                                    praesentium, animi pariatur molestiae dicta neque ex natus nam quod voluptate
-                                    tempora?</p>
-                                <a href="#about" class="btn btn-small"><i class="fas fa-chevron-down"></i> Learn
-                                    More</a>
-                            </div>
-                            <div class="twin-right">
-                                <img src="https://source.unsplash.com/1600x900/?whale" alt="">
-                            </div>
+
+                    <div class="card twin-container reverse">
+                        <div class="twin-left">
+                            <h2 class="headline">They eat boats</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at ipsum dolor
+                                blanditiis
+                                praesentium, animi pariatur molestiae dicta neque ex natus nam quod voluptate
+                                tempora?
+                            </p>
+                            <a href="#about" class="btn btn-small"><i class="fas fa-chevron-down"></i> Learn
+                                More</a>
+                        </div>
+                        <div class="twin-right">
+                            <img src="https://source.unsplash.com/1600x900/?boats" alt="">
+                        </div>
+
+                    </div>
+                    <div class="card twin-container">
+                        <div class="twin-left">
+                            <h2 class="headline">They love posing for photos</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at ipsum dolor
+                                blanditiis
+                                praesentium, animi pariatur molestiae dicta neque ex natus nam quod voluptate
+                                tempora?</p>
+                            <a href="#about" class="btn btn-small"><i class="fas fa-chevron-down"></i> Learn
+                                More</a>
+                        </div>
+                        <div class="twin-right">
+                            <img src="https://source.unsplash.com/1600x900/?whale" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section id="contact">
+            <div class="section-container container">
+                <h2 class="headline">Call For Family</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at ipsum dolor
+                    blanditiis
+                    praesentium, animi pariatur molestiae dicta neque ex natus nam quod voluptate
+                    tempora?</p>
+
+                <div class="card bg-primary">
+                    <form action="" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" name="name" id="name" placeholder='Whoooaaahahhhahh'>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="text" name="email" id="email" placeholder='mwuaow@orca.shore'>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Message</label>
+                            <textarea name="message" id="" cols="30" rows="10"
+                                placeholder="WHOOOOAhhhahhhhamuwuuuwahhhahhhhahhhahhh...?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Call for Family</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="footer-icons">
+                    <a href="#" class='icon-link'><i class="fab fa-2x fa-facebook"></i></a>
+                    <a href="#" class='icon-link'><i class="fab fa-2x fa-twitter"></i></a>
+                    <a href="#" class='icon-link'><i class="fab fa-2x fa-instagram"></i></a>
+                    <a href="#" class='icon-link'><i class="fab fa-2x fa-linkedin"></i></a>
+                </div>
+                <p>WeLuvWales &copy; 2020, All whale rights reserved</p>
+            </div>
+        </footer>
 
     </body>
 
