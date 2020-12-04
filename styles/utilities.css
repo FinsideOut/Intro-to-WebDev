@@ -103,7 +103,7 @@ button {
 }
 .btn-small:hover {
   color: #01acb4;
-  background-color: white;
+  background-color: #222;
 }
 
 /* CARDS /////////////////////////////////////////////////// */
@@ -130,4 +130,9 @@ button {
   background-color: #01acb4;
   margin: auto;
   margin-top: 3rem;
+}
+.fader {
+  width: 100%;
+  background-color: #222;
+  height: 10%;
 }

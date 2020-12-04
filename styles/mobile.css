@@ -1,0 +1,56 @@
+.header-container {
+  flex-direction: column;
+  padding-top: 5vh;
+  justify-content: space-around;
+}
+@media (max-width: 375px) {
+  .logo {
+    font-size: 2rem;
+  }
+}
+.main-nav {
+  margin-top: 1rem;
+}
+.main-nav ul li {
+  margin-left: 1rem;
+}
+.hero-container {
+  margin-top: 35vh;
+}
+.content-left {
+  display: none;
+}
+.content-right {
+  text-align: center;
+  padding: 1rem;
+}
+
+.btn {
+  font-size: 1.5rem;
+}
+
+.card-container {
+  flex-direction: column;
+}
+
+.twin-container {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.twin-left,
+.twin-right {
+  max-width: 90%;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+}
+
+.footer-icons {
+  width: 90%;
+}
+.twin-container img {
+  display: none;
+}

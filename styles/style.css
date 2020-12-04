@@ -30,8 +30,8 @@ body {
 /* background */
 #home {
   position: relative;
-  height: 100vh;
-  background: url("../img/home-whale.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+  background: url("../img/home-whale.jpg") no-repeat center center/ cover;
 }
 #home::after {
   content: "";
@@ -54,8 +54,10 @@ body {
   max-width: 500px;
 }
 .dive-container {
+  padding-bottom: 2rem;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 #about {
@@ -78,8 +80,12 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  height: 40vh;
+  min-height: 40vh;
   text-align: left;
+}
+.twin-left,
+.twin-right {
+  padding: 1rem;
 }
 .twin-right {
   max-width: 50%;
